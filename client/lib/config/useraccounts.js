@@ -62,3 +62,5 @@ AccountsTemplates.configureRoute('resetPwd', {
   layoutRegions: {},
   contentRegion: 'main'
 });
+
+T9n.setLanguage('pt');
