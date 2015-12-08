@@ -1,0 +1,17 @@
+<template name="transportadorasEdit">
+    {{#if subsReady 'transportadora'}}
+        {{#with technology}}
+            {{#panel title="Editar Transportadora" }}
+                {{#autoForm collection="Transportadoras" 
+                    id="updateTransportadorasForm" 
+                    doc=this type="update" 
+                    class="form-horizontal"}}
+                        {{> afQuickField name="nome" label-class="col-sm-3" input-col-class="col-sm-9"}} 
+                        {{> submit texto="Editar" buttonClass="col-sm-9" offsetClass="col-sm-offset-3"}}
+                {{/autoForm}}
+            {{/panel}}
+        {{/with}}
+    {{else}}
+        {{> spinner}}
+    {{/if}}
+</template>

@@ -1,5 +1,6 @@
 {
-  "AWSAccessKeyId": "AKIAJKCV7ZRN6W52GUOQ",
-  "AWSSecretAccessKey": "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",
-  "AWSBucket": "techdb"
+  "AWSAccessKeyId": "AKIAJYMWRV6BAYAHSIQA",
+  "AWSSecretAccessKey": "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",
+  "AWSBucket": "gadle",
+  "GoogleAPIKey" : "AIzaSyC8kXh_rUxm3RUSdNxbpFhDRFe3jrv0RmU"
 }

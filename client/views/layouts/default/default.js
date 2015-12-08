@@ -1,3 +1,7 @@
+Template.defaultLayout.onCreated(function() {
+  $('body').removeClass('colored-bg');
+});
+
 Template.defaultLayout.onRendered(function() {
   // Minimalize menu when screen is less than 768px
   $(window).bind('resize load', function() {

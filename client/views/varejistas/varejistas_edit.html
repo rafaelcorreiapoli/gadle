@@ -1,0 +1,17 @@
+<template name="varejistasEdit">
+    {{#if subsReady 'varejista'}}
+        {{#with technology}}
+            {{#panel title="Editar Varejista" }}
+                {{#autoForm collection="Varejistas" 
+                    id="updateVarejistasForm" 
+                    doc=this type="update" 
+                    class="form-horizontal"}}
+                        {{> afQuickField name="nome" label-class="col-sm-3" input-col-class="col-sm-9"}} 
+                        {{> submit texto="Editar" buttonClass="col-sm-9" offsetClass="col-sm-offset-3"}}
+                {{/autoForm}}
+            {{/panel}}
+        {{/with}}
+    {{else}}
+        {{> spinner}}
+    {{/if}}
+</template>

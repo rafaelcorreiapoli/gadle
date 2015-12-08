@@ -3,92 +3,92 @@ Template.menu.helpers({
     return [
       {
         regex: '^users',
-        name: 'Users',
+        name: 'Usuários',
         icon: 'fa fa-users',
         roles: ['god', 'admin'],
         submenu: [
           {
-            name: 'Manage',
+            name: 'Listar',
             linkTo: 'users.index',
             roles: ['god', 'admin']
           },
           {
             roles: ['god', 'admin'],
             linkTo: 'users.add',
-            name: 'New'
+            name: 'Novo'
           }
         ]
       },
       {
-        regex: '^technologies',
-        name: 'Technologies',
-        icon: 'fa fa-database',
+        regex: '^transportadoras',
+        name: 'Transportadoras',
+        icon: 'fa fa-truck',
         roles: ['god', 'admin'],
         submenu: [
           {
             roles: ['god', 'admin'],
-            linkTo: 'technologies.index',
-            name: 'Manage'
+            linkTo: 'transportadoras.index',
+            name: 'Listar'
           },
           {
             roles: ['god', 'admin'],
-            linkTo: 'technologies.add',
-            name: 'New'
+            linkTo: 'transportadoras.add',
+            name: 'Novo'
           }
         ]
       },
       {
-        regex: '^projects',
-        name: 'Projects',
+        regex: '^varejistas',
+        name: 'Varejistas',
         icon: 'fa fa-briefcase',
         roles: ['god', 'admin'],
         submenu: [
           {
             roles: ['god', 'admin'],
-            linkTo: 'projects.index',
-            name: 'Manage'
+            linkTo: 'varejistas.index',
+            name: 'Listar'
           },
           {
             roles: ['god', 'admin'],
-            linkTo: 'projects.add',
-            name: 'New'
+            linkTo: 'varejistas.add',
+            name: 'Novo'
           }
         ]
       },
 
       {
-        regex: '^organizations',
-        name: 'Organizations',
-        icon: 'fa fa-map-o',
+        regex: '^veiculos',
+        name: 'Veículos',
+        icon: 'fa fa-car',
         roles: ['god', 'admin'],
         submenu: [
           {
             roles: ['god', 'admin'],
-            linkTo: 'organizations.index',
-            name: 'Manage',
+            linkTo: 'veiculos.index',
+            name: 'Listar',
           },
           {
             roles: ['god', 'admin'],
-            linkTo: 'organizations.add',
-            name: 'New'
+            linkTo: 'veiculos.add',
+            name: 'Novo'
           }
         ]
       },
       {
-        regex: '^attachments',
-        name: 'Attachments',
+        regex: '^entregas',
+        name: 'Entregas',
         icon: 'fa fa-map-o',
         roles: ['god', 'admin'],
         submenu: [
           {
             roles: ['god', 'admin'],
-            linkTo: 'attachments.index',
-            name: 'Manage',
+            linkTo: 'entregas.index',
+            name: 'Listar',
           },
           {
             roles: ['god', 'admin'],
-            linkTo: 'attachments.add',
-            name: 'New'
+            linkTo: 'entregas.add',
+            name: 'Novo'
           }
         ]
       }
