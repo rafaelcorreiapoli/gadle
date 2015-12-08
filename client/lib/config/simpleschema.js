@@ -1,10 +1,10 @@
 //
 //  SimpleSchema Messages
 //
-/*
+
 SimpleSchema.messages({
   required: '[label] é necessário',
-  minString: '[label] precisa ter no mínimp [min] caracteres',
+  minString: '[label] precisa ter no mínimo [min] caracteres',
   maxString: '[label] não pode ter mais que [max] caracteres',
   minNumber: '[label] precisa ser no minimo [min]',
   maxNumber: '[label] não pode exceder [max]',
@@ -35,4 +35,3 @@ SimpleSchema.messages({
   ],
   keyNotInSchema: '[key] não é válida no modelo'
 });
-*/

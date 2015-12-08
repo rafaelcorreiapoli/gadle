@@ -1,7 +1,7 @@
 //
 //  DataTables Messages
 //
-/*
+
 $.extend(true, $.fn.dataTable.defaults, {
   oLanguage: {
     sProcessing: 'Processando....',
@@ -20,5 +20,4 @@ $.extend(true, $.fn.dataTable.defaults, {
       sLast: 'Último'
     }
   }
-})
-*/
+});

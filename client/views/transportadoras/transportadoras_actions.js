@@ -2,7 +2,7 @@ Template.transportadorasActions.helpers({
   beforeRemove() {
     return function(collection, id) {
       let doc = collection.findOne(id);
-      removeConfirmation(doc.name, () => {
+      removeConfirmation(doc.nome, () => {
         this.remove();
       });
     };

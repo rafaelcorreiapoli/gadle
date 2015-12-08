@@ -1,11 +1,11 @@
 removeConfirmation = function(name, callback) {
   swal({
-    title: 'Are you sure?',
-    text: 'Your will not be able to recover this document "' + name + '"!',
+    title: 'Tem certeza?',
+    text: 'Você não poderá mais recuperar o documento "' + name + '"',
     type: 'warning',
     showCancelButton: true,
     confirmButtonColor: '#DD6B55',
-    confirmButtonText: 'Yes, delete it!',
+    confirmButtonText: 'Sim, deletar!',
     closeOnConfirm: false
   }, () => {
     callback();
@@ -13,16 +13,16 @@ removeConfirmation = function(name, callback) {
 };
 
 removeSuccess = function() {
-  swal('Deleted!', 'Your document has been deleted.', 'success');
+  swal('Deletado!', 'O documento foi delatado.', 'success');
 };
 
 removeError = function() {
-  swal('Error!', 'Your document has not been deleted.', 'danger');
+  swal('Error!', 'O documento não foi deletado.', 'danger');
 };
 
 
 handleTableClick = function(event, callback) {
-    console.log(event); 
+    console.log(event);
     let dataTable = $(event.target).closest('table').DataTable();
     let rowData = dataTable.row(event.currentTarget).data();
     if (!rowData) return; // Won't be data if a placeholder row is clicked
